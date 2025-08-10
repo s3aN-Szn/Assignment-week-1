@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessible & SEO-Friendly Sample Page — Sean Maina</title>
+    <meta name="description" content="Sample HTML5 page demonstrating semantic structure, accessibility best practices, and basic on-page SEO techniques.">
+    <meta name="author" content="Sean Maina">
+
+    <!-- Open Graph (basic) -->
+    <meta property="og:title" content="Accessible & SEO-Friendly Sample Page">
+    <meta property="og:description" content="An example HTML5 page using semantic elements and accessibility attributes for learning purposes.">
+    <meta property="og:type" content="website">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+  </head>
+  <body>
+    <!-- Skip link for keyboard/screen-reader users -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+      <h1>Accessible & SEO-Friendly Sample Page</h1>
+      <p lang="en">A simple demonstration of HTML5 semantic structure, accessibility features, and beginner SEO.</p>
+
+      <nav role="navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" role="main">
+      <article aria-labelledby="about-heading">
+        <header>
+          <h2 id="about-heading">About This Page</h2>
+        </header>
+        <p>This page shows how to use HTML5 semantic elements (<code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>, <code>section</code>, <code>aside</code>, <code>footer</code>) to create a document that is both accessible and search-engine friendly.</p>
+
+        <section aria-labelledby="why-heading">
+          <h3 id="why-heading">Why Semantics, Accessibility, and SEO Matter</h3>
+          <p>Semantic HTML improves machine readability and helps assistive technologies understand the page structure. Clear headings and concise content improve discoverability by search engines and provide a better experience for users.</p>
+        </section>
+
+        <section aria-labelledby="principles-heading">
+          <h3 id="principles-heading">Core Principles Demonstrated</h3>
+          <ul>
+            <li>Logical heading order (H1 → H2 → H3).</li>
+            <li>Landmark elements and ARIA labels for navigation.</li>
+            <li>Descriptive link text and accessible images.</li>
+          </ul>
+        </section>
+      </article>
+
+      <article aria-labelledby="services-heading">
+        <header>
+          <h2 id="services-heading">Services</h2>
+        </header>
+
+        <section aria-labelledby="web-heading">
+          <h3 id="web-heading">Web Development</h3>
+          <p>Front-end development focused on accessible, responsive interfaces. Use of semantic markup and progressive enhancement ensures content remains available to all users.</p>
+        </section>
+
+        <section aria-labelledby="seo-heading">
+          <h3 id="seo-heading">SEO Fundamentals</h3>
+          <p>On-page SEO basics shown here include meaningful title and description metadata, clear headings, and content that answers user intent.</p>
+        </section>
+
+        <figure aria-labelledby="screenshot-caption">
+          <!-- Use descriptive alt text for accessibility -->
+          <img src="https://via.placeholder.com/600x200?text=Sample+Page+Screenshot" alt="Screenshot showing the header and navigation of the sample page">
+          <figcaption id="screenshot-caption">Example layout showing header and navigation landmarks.</figcaption>
+        </figure>
+      </article>
+
+      <aside role="complementary" aria-labelledby="resources-heading">
+        <h2 id="resources-heading">Resources</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="noopener">MDN — HTML reference</a></li>
+          <li><a href="https://www.w3.org/WAI/" rel="noopener">WAI — Web Accessibility Initiative</a></li>
+          <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" rel="noopener">Google — SEO starter guide</a></li>
+        </ul>
+      </aside>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>If this were a live site you'd provide a contact form here. For demonstration purposes include a plain-text email link that is descriptive to assistive tech:</p>
+        <p><a href="mailto:leok4442@gmail.com">Email Sean about accessibility & SEO</a></p>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Sean Maina. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#main">Back to content</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
